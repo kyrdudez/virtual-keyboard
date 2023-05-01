@@ -1,0 +1,83 @@
+.wrapper{
+  width: 900px;
+  margin: 0 auto;
+}
+.header__title{
+  font-size: 40px;
+  color: grey;
+  text-align: center;
+}
+.input__text-keyboard{
+  background-color: rgb(26, 26, 26);
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+  width: 895px;
+  height: 200px;
+  font-size: 40px;
+  color: white;
+}
+.keyboard{
+  background-color: rgb(26, 26, 26);
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+  border: 5px solid black;
+  height: 315px;
+  padding: 5px;
+}
+.row{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  gap: 5px;
+}
+.key{
+  background-color: gray;
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.7;
+}
+.key:hover{
+ background-color: rgb(138, 119, 119);
+}
+.backspace , .tab, .caps, .enter, .shift, .сtrl, .space{
+  background-color: rgb(105, 100, 100);
+}
+.backspace {
+  width: 100px;
+}
+.tab{
+  width: 95px;
+}
+.caps{
+  width: 110px;
+}
+.enter{
+  width: 100px;
+}
+.shift{
+  width: 155px;
+}
+.сtrl{
+  width: 70px;
+}
+.space{
+  width: 365px;
+  
+}
+.r-shift{
+  width: 55px;
+}
+.keyboard .active{
+  background-color: green;
+  transition: 0.5s;
+}
+
+.operation-system,.keyboard-layout {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
