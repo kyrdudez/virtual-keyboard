@@ -1,16 +1,48 @@
 .wrapper{
-  max-width: 1200px;
+  max-width: 950px;
   margin: 0 auto;
 }
 .header__title{
   font-size: 40px;
   color: pink;
+  text-align: center;
 }
 .input__text-keyboard{
-  max-width: 1200px;
-  height: 400px;
+  width: 940px;
+  height: 200px;
 }
 .keyboard{
   border: 2px solid black;
-  height: 600px;
+  height: 300px;
+  padding: 20px;
+}
+.row{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  gap: 5px;
+}
+.key{
+  background-color: red;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.backspace {
+  width: 100px;
+  background-color: blue;
+}
+.key-active{
+  background-color: green;
+  transition: 0.5s;
+}
+.operation-system,.keyboard-layout {
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
