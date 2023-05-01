@@ -4,15 +4,20 @@
 }
 .header__title{
   font-size: 40px;
-  color: pink;
+  color: grey;
   text-align: center;
 }
 .input__text-keyboard{
+  background-color: rgb(26, 26, 26);
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
   width: 895px;
   height: 200px;
   font-size: 40px;
+  color: white;
 }
 .keyboard{
+  background-color: rgb(26, 26, 26);
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
   border: 5px solid black;
   height: 315px;
   padding: 5px;
@@ -26,7 +31,8 @@
   gap: 5px;
 }
 .key{
-  background-color: red;
+  background-color: gray;
+  box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
   width: 55px;
   height: 55px;
   border-radius: 5px;
@@ -34,39 +40,38 @@
   font-size: 20px;
   line-height: 2.7;
 }
-
+.key:hover{
+ background-color: rgb(138, 119, 119);
+}
+.backspace , .tab, .caps, .enter, .shift, .сtrl, .space{
+  background-color: rgb(105, 100, 100);
+}
 .backspace {
   width: 100px;
-  background-color: blue;
 }
 .tab{
   width: 95px;
-  background-color: blue;
 }
 .caps{
   width: 110px;
-  background-color: blue;
 }
 .enter{
   width: 100px;
-  background-color: blue;
 }
 .shift{
   width: 155px;
-  background-color: blue;
 }
 .сtrl{
   width: 70px;
-  background-color: blue;
 }
 .space{
   width: 365px;
-  background-color: blue;
+  
 }
 .r-shift{
   width: 55px;
 }
-.active{
+.keyboard .active{
   background-color: green;
   transition: 0.5s;
 }
