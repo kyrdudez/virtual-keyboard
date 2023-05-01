@@ -19,19 +19,43 @@ class CreateHtml {
       {
         type: 'row',
         keys: [
-          { text: '1', keycode: 49, shift: '!' },
-          { text: '1', keycode: 49, shift: '!' },
-          { text: '2', keycode: 50, shift: '"' },
-          { text: '3', keycode: 51, shift: '№' },
-          { text: '4', keycode: 52, shift: ';' },
-          { text: '5', keycode: 53, shift: '%' },
-          { text: '6', keycode: 54, shift: ':' },
-          { text: '7', keycode: 55, shift: '?' },
-          { text: '8', keycode: 56, shift: '*' },
-          { text: '9', keycode: 57, shift: '(' },
-          { text: '0', keycode: 48, shift: ')' },
-          { text: '-', keycode: 189, shift: '_' },
-          { text: '=', keycode: 187, shift: '+' },
+          { text: '`', keycode: 192, shift: '~' },
+          {
+            text: '1', keycode: 49, shift: '!', subtext: '~',
+          },
+          {
+            text: '2', keycode: 50, shift: '"', subtext: '"',
+          },
+          {
+            text: '3', keycode: 51, shift: '№', subtext: '№',
+          },
+          {
+            text: '4', keycode: 52, shift: ';', subtext: ';',
+          },
+          {
+            text: '5', keycode: 53, shift: '%', subtext: '%',
+          },
+          {
+            text: '6', keycode: 54, shift: ':', subtext: '^',
+          },
+          {
+            text: '7', keycode: 55, shift: '?', subtext: '&',
+          },
+          {
+            text: '8', keycode: 56, shift: '*', subtext: '*',
+          },
+          {
+            text: '9', keycode: 57, shift: '(', subtext: '(',
+          },
+          {
+            text: '0', keycode: 48, shift: ')', subtext: ')',
+          },
+          {
+            text: '-', keycode: 189, shift: '_', subtext: '_',
+          },
+          {
+            text: '=', keycode: 187, shift: '+', subtext: '=',
+          },
           { text: 'Backspace', keycode: 8 },
         ],
       },
@@ -86,8 +110,8 @@ class CreateHtml {
           { text: ',', keycode: 188, shift: '<' },
           { text: '.', keycode: 190, shift: '>' },
           { text: '/', keycode: 191, shift: '?' },
-          { text: 'arrowUp', keycode: 38 },
-          { text: 'Shift', keycode: 16 },
+          { text: '↑', keycode: 38 },
+          { text: 'Shift', keycode: 16, shift: 'pause' },
         ],
       },
       {
@@ -99,9 +123,9 @@ class CreateHtml {
           { text: '', keycode: 32 },
           { text: 'alt', keycode: 18 },
           { text: 'сtrl', keycode: 17 },
-          { text: 'arrowleft', keycode: 37 },
-          { text: 'arrowBottom', keycode: 40 },
-          { text: 'arrowRight', keycode: 39 },
+          { text: '←', keycode: 37 },
+          { text: '↓', keycode: 40 },
+          { text: '→', keycode: 39 },
         ],
       },
     ];
@@ -126,10 +150,31 @@ class CreateHtml {
           const keyEl = document.createElement('div');
           keyEl.classList.add('key');
           keyEl.textContent = key.text;
+
           if (key.text === 'Backspace') {
             keyEl.classList.add('backspace');
           }
-
+          if (key.text === 'Tab') {
+            keyEl.classList.add('tab');
+          }
+          if (key.text === 'Caps Lock') {
+            keyEl.classList.add('caps');
+          }
+          if (key.text === 'Enter') {
+            keyEl.classList.add('enter');
+          }
+          if (key.text === 'Shift') {
+            keyEl.classList.add('shift');
+          }
+          if (key.text === 'сtrl') {
+            keyEl.classList.add('сtrl');
+          }
+          if (key.keycode === 32) {
+            keyEl.classList.add('space');
+          }
+          if (key.shift === 'pause') {
+            keyEl.classList.add('r-shift');
+          }
           keyboard.appendChild(keyEl);
           rowEl.appendChild(keyEl);
         });

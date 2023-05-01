@@ -1,5 +1,5 @@
 .wrapper{
-  max-width: 950px;
+  width: 900px;
   margin: 0 auto;
 }
 .header__title{
@@ -8,13 +8,13 @@
   text-align: center;
 }
 .input__text-keyboard{
-  width: 940px;
+  width: 895px;
   height: 200px;
 }
 .keyboard{
-  border: 2px solid black;
-  height: 300px;
-  padding: 20px;
+  border: 5px solid black;
+  height: 315px;
+  padding: 5px;
 }
 .row{
   flex-direction: row;
@@ -30,17 +30,46 @@
   height: 55px;
   border-radius: 5px;
   text-align: center;
-  display: flex;
-  align-items: center;
+  font-size: 20px;
+  line-height: 2.7;
 }
+
 .backspace {
   width: 100px;
   background-color: blue;
+}
+.tab{
+  width: 95px;
+  background-color: blue;
+}
+.caps{
+  width: 110px;
+  background-color: blue;
+}
+.enter{
+  width: 100px;
+  background-color: blue;
+}
+.shift{
+  width: 155px;
+  background-color: blue;
+}
+.сtrl{
+  width: 70px;
+  background-color: blue;
+}
+.space{
+  width: 365px;
+  background-color: blue;
+}
+.r-shift{
+  width: 55px;
 }
 .key-active{
   background-color: green;
   transition: 0.5s;
 }
+
 .operation-system,.keyboard-layout {
   font-size: 20px;
   color: black;
