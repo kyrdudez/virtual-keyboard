@@ -2,19 +2,43 @@ const keyDataEn = [
   {
     type: 'row',
     keys: [
-      { text: '1', keycode: 49, shift: '!' },
-      { text: '`', keycode: 49, shift: '!' },
-      { text: '2', keycode: 50, shift: '"' },
-      { text: '3', keycode: 51, shift: '№' },
-      { text: '4', keycode: 52, shift: ';' },
-      { text: '5', keycode: 53, shift: '%' },
-      { text: '6', keycode: 54, shift: ':' },
-      { text: '7', keycode: 55, shift: '?' },
-      { text: '8', keycode: 56, shift: '*' },
-      { text: '9', keycode: 57, shift: '(' },
-      { text: '0', keycode: 48, shift: ')' },
-      { text: '-', keycode: 189, shift: '_' },
-      { text: '=', keycode: 187, shift: '+' },
+      { text: '`', keycode: 192, shift: '~' },
+      {
+        text: '1', keycode: 49, shift: '!', subtext: '~',
+      },
+      {
+        text: '2', keycode: 50, shift: '"', subtext: '"',
+      },
+      {
+        text: '3', keycode: 51, shift: '№', subtext: '№',
+      },
+      {
+        text: '4', keycode: 52, shift: ';', subtext: ';',
+      },
+      {
+        text: '5', keycode: 53, shift: '%', subtext: '%',
+      },
+      {
+        text: '6', keycode: 54, shift: ':', subtext: '^',
+      },
+      {
+        text: '7', keycode: 55, shift: '?', subtext: '&',
+      },
+      {
+        text: '8', keycode: 56, shift: '*', subtext: '*',
+      },
+      {
+        text: '9', keycode: 57, shift: '(', subtext: '(',
+      },
+      {
+        text: '0', keycode: 48, shift: ')', subtext: ')',
+      },
+      {
+        text: '-', keycode: 189, shift: '_', subtext: '_',
+      },
+      {
+        text: '=', keycode: 187, shift: '+', subtext: '=',
+      },
       { text: 'Backspace', keycode: 8 },
     ],
   },
@@ -22,19 +46,19 @@ const keyDataEn = [
     type: 'row',
     keys: [
       { text: 'Tab', keycode: 9 },
-      { text: 'q', keycode: 81, shift: 'Й' },
-      { text: 'w', keycode: 87, shift: 'Ц' },
-      { text: 'e', keycode: 69, shift: 'У' },
-      { text: 'r', keycode: 82, shift: 'К' },
-      { text: 't', keycode: 84, shift: 'Е' },
-      { text: 'y', keycode: 89, shift: 'Н' },
-      { text: 'u', keycode: 85, shift: 'Г' },
-      { text: 'i', keycode: 73, shift: 'Ш' },
-      { text: 'o', keycode: 79, shift: 'Щ' },
+      { text: 'q', keycode: 81, shift: 'Q' },
+      { text: 'w', keycode: 87, shift: 'W' },
+      { text: 'e', keycode: 69, shift: 'E' },
+      { text: 'r', keycode: 82, shift: 'R' },
+      { text: 't', keycode: 84, shift: 'T' },
+      { text: 'y', keycode: 89, shift: 'Y' },
+      { text: 'u', keycode: 85, shift: 'U' },
+      { text: 'i', keycode: 73, shift: 'I' },
+      { text: 'o', keycode: 79, shift: 'O' },
+      { text: 'p', keycode: 80, shift: 'P' },
       { text: '[', keycode: 219, shift: '{' },
       { text: ']', keycode: 221, shift: '}' },
       { text: '\\', keycode: 220, shift: '|' },
-      { text: 'Del', keycode: 46 },
     ],
   },
   {
@@ -70,7 +94,7 @@ const keyDataEn = [
       { text: '.', keycode: 190, shift: '>' },
       { text: '/', keycode: 191, shift: '?' },
       { text: '↑', keycode: 38 },
-      { text: 'Shift', keycode: 16 },
+      { text: 'Shift', keycode: 16, shift: 'pause' },
     ],
   },
   {

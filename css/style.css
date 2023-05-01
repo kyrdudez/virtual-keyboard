@@ -10,6 +10,7 @@
 .input__text-keyboard{
   width: 895px;
   height: 200px;
+  font-size: 40px;
 }
 .keyboard{
   border: 5px solid black;
@@ -65,7 +66,7 @@
 .r-shift{
   width: 55px;
 }
-.key-active{
+.active{
   background-color: green;
   transition: 0.5s;
 }
